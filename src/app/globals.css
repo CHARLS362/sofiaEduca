@@ -1,0 +1,113 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 213 33% 95%; /* Light Gray F0F4F8 */
+    --foreground: 213 33% 10%; /* Dark Gray/Blue */
+
+    --muted: 213 33% 88%;
+    --muted-foreground: 213 33% 35%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 33% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 33% 10%;
+
+    --border: 213 33% 85%;
+    --input: 213 33% 88%;
+
+    --primary: 207 88% 71%; /* Soft Blue #64B5F6 */
+    --primary-foreground: 207 88% 10%; /* Dark Blue for contrast */
+
+    --secondary: 207 88% 90%; /* Lighter blue for secondary elements */
+    --secondary-foreground: 207 88% 10%;
+
+    --accent: 36 100% 75%; /* Light Orange #FFCC80 */
+    --accent-foreground: 36 100% 15%; /* Dark Orange/Brown for contrast */
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 207 88% 65%; /* A slightly darker shade of primary for rings */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors */
+    --sidebar-background: 0 0% 100%; /* White */
+    --sidebar-foreground: 213 33% 25%; /* Dark Gray/Blue */
+    --sidebar-primary: 207 88% 71%; /* Main primary color */
+    --sidebar-primary-foreground: 207 88% 10%; /* Dark text on primary */
+    --sidebar-accent: 207 88% 92%; /* Lighter blue for hover */
+    --sidebar-accent-foreground: 207 88% 10%; /* Dark text on hover */
+    --sidebar-border: 213 33% 90%; /* Lighter gray */
+    --sidebar-ring: 207 88% 65%;
+
+    --chart-1: 207 88% 60%;
+    --chart-2: 36 100% 65%;
+    --chart-3: 173 58% 39%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 213 33% 10%;
+    --foreground: 213 33% 95%;
+
+    --muted: 213 33% 20%;
+    --muted-foreground: 213 33% 70%;
+
+    --popover: 213 33% 12%;
+    --popover-foreground: 213 33% 95%;
+
+    --card: 213 33% 12%;
+    --card-foreground: 213 33% 95%;
+
+    --border: 213 33% 25%;
+    --input: 213 33% 25%;
+
+    --primary: 207 88% 65%;
+    --primary-foreground: 207 88% 10%;
+
+    --secondary: 207 88% 25%;
+    --secondary-foreground: 207 88% 90%;
+    
+    /* Accent adjusted for dark theme sidebar to match image's green */
+    --accent: 36 100% 70%; 
+    --accent-foreground: 36 100% 10%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 207 88% 60%;
+
+    /* Dark Sidebar specific colors - updated to match image */
+    --sidebar-background: 220 13% 10%; /* Very dark gray, almost black */
+    --sidebar-foreground: 210 20% 90%; /* Light gray/white for text */
+    --sidebar-primary: 145 60% 40%; /* Green color for primary actions/highlights if needed */
+    --sidebar-primary-foreground: 145 60% 95%; /* Light text for on-green primary */
+    --sidebar-accent: 145 55% 35%;  /* Green for active Panel item - as per image */
+    --sidebar-accent-foreground: 145 55% 95%; /* Light green/white text for on-green accent */
+    --sidebar-border: 220 13% 20%; /* Slightly lighter border for dark sidebar */
+    --sidebar-ring: 145 60% 50%; /* Green ring */
+
+    --chart-1: 207 88% 70%;
+    --chart-2: 36 100% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Removed .background-cubes-container, .cube, and @keyframes float */
